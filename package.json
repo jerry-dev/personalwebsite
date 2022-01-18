@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "homepage": "",
+  "homepage": "./",
   "scripts": {
     "build-html": "cp ./src/template.html ./dist/index.html",
     "build-stylesheet": "cp ./src/stylesheets/index.css ./dist/",
