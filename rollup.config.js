@@ -33,7 +33,7 @@ export default [
 			importAssertionsPlugin(),
 			modify({
 				find: "../src/",
-				replace: "./dist/",
+				replace: "/",
 			}),
 		],
 	}
