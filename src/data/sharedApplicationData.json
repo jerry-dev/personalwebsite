@@ -1,0 +1,118 @@
+{
+    "icons" : {
+        "logo": "../src/assets/images/logo.svg"
+    },
+    "text": {
+        "logoAlt": "A logo for the website"
+    },
+    "portfolioItems":  [
+        {
+            "status": "deployed",
+            "title": "Audiophile",
+            "description": "This fictional e-commerce store was built using semantic HTML, a mix of CSS Flexbox and CSS Grid for the layout, JavaScript for the logic and the native Web Components API for the componentization and CSS encapsulation. The UI design mockup was spec’d to be fully responsive.",
+            "projectParameter": "audiophile",
+            "background": "This application’s UI design/mockup comes from the website/service frontendmentor.io as a frontend challenge. As of writing this, this challenge was by far the most demanding application I’ve ever built. It required me to utilize the Flux architecture pattern (single store in this case) for state management, localStorage for local data caching, and various other design patterns such as container/presentation, Publish/Subscribe (a helper pattern to the Flux architecture). I also took full advantage of the new import assertions web API for modular CSS and JSON. Like with all projects, I learned a lot of new approaches to solving problems, and feel that this project more so than any other, raised my skills the most.",
+            "techstack": ["HTML","CSS","JavaScript"],
+            "projectType": ["Application Concept", "Front End Development"],
+            "projectLinks": {
+                "websiteLink": "https://audiophile-by-jerry-dormetus.netlify.app/",
+                "publicRemoteRepo": ""
+            },
+            "images": {
+                "homepage": {
+                    "desktop": "../src/assets/images/homepage/desktop/image-audiophile-homepage-hero.jpg",
+                    "tablet": "../src/assets/images/homepage/tablet/image-audiophile-homepage-hero.jpg",
+                    "mobile": "../src/assets/images/homepage/mobile/image-audiophile-homepage-hero.jpg"
+                },
+                "portfolio": {
+                    "desktop": "../src/assets/images/portfolio/desktop/image-portfolio-audiophile.jpg",
+                    "tablet": "../src/assets/images/portfolio/tablet/image-portfolio-audiophile.jpg",
+                    "mobile": "../src/assets/images/portfolio/mobile/image-portfolio-audiophile.jpg"
+                },
+                "detail": {
+                    "heroDesktop": "../src/assets/images/detail/desktop/image-audiophile-hero.jpg",
+                    "staticPreviewOneDesktop": "../src/assets/images/detail/desktop/image-audiophile-static-preview-one.jpg",
+                    "staticPreviewTwoDesktop": "../src/assets/images/detail/desktop/image-audiophile-static-preview-two.jpg",
+                    "heroTablet": "../src/assets/images/detail/tablet/image-audiophile-hero.jpg",
+                    "staticPreviewOneTablet": "../src/assets/images/detail/tablet/image-audiophile-static-preview-one.jpg",
+                    "staticPreviewTwoTablet": "../src/assets/images/detail/tablet/image-audiophile-static-preview-two.jpg",
+                    "heroMobile": "../src/assets/images/detail/mobile/image-audiophile-hero.jpg",
+                    "staticPreviewOneMobile": "../src/assets/images/detail/mobile/image-audiophile-static-preview-one.jpg",
+                    "staticPreviewTwoMobile": "../src/assets/images/detail/mobile/image-audiophile-static-preview-two.jpg"
+                }
+            }
+        },
+        {
+            "status": "deployed",
+            "title": "Photosnap",
+            "description": "This project is a marketing website for a mock photo sharing service. The mockup comes again from a challenge hosted by frontendmentor.io. Within the website is a responsive pricing table, pricing plan toggle, and many other common user interface patterns that I both enjoyed building and struggled with early* into my self teaching journey.",
+            "projectParameter": "photosnap",
+            "background": "This application’s UI design/mockup comes from the website/service frontendmentor.io as a frontend challenge. This project was my first big* project. It forced me to read a lot of articles on responsive UI design, and how to apply responsive UI design using CSS. This project was also the catalyst for my learning and appreciation for both ::before and ::after pseudo-elements. This project was very enjoyable to work on, mostly due to how stylish the design is.",
+            "techstack": ["HTML","CSS","JavaScript"],
+            "projectType": ["Application Concept", "Front End Development"],
+            "projectLinks": {
+                "websiteLink": "https://photosnap-by-jerry-dormetus.netlify.app/",
+                "publicRemoteRepo": ""
+            },
+            "images": {
+                "homepage": {
+                    "desktop": "../src/assets/images/homepage/desktop/image-audiophile-homepage-hero.jpg",
+                    "tablet": "../src/assets/images/homepage/tablet/image-audiophile-homepage-hero.jpg",
+                    "mobile": "../src/assets/images/homepage/mobile/image-audiophile-homepage-hero.jpg"
+                },
+                "portfolio": {
+                    "desktop": "../src/assets/images/portfolio/desktop/image-portfolio-photosnap.jpg",
+                    "tablet": "../src/assets/images/portfolio/tablet/image-portfolio-photosnap.jpg",
+                    "mobile": "../src/assets/images/portfolio/mobile/image-portfolio-photosnap.jpg"
+                },
+                "detail": {
+                    "heroDesktop": "../src/assets/images/detail/desktop/image-photosnap-hero.jpg",
+                    "staticPreviewOneDesktop": "../src/assets/images/detail/desktop/image-photosnap-static-preview-one.jpg",
+                    "staticPreviewTwoDesktop": "../src/assets/images/detail/desktop/image-photosnap-static-preview-two.jpg",
+                    "heroTablet": "../src/assets/images/detail/tablet/image-photosnap-hero.jpg",
+                    "staticPreviewOneTablet": "../src/assets/images/detail/tablet/image-photosnap-static-preview-one.jpg",
+                    "staticPreviewTwoTablet": "../src/assets/images/detail/tablet/image-photosnap-static-preview-two.jpg",
+                    "heroMobile": "../src/assets/images/detail/mobile/image-photosnap-hero.jpg",
+                    "staticPreviewOneMobile": "../src/assets/images/detail/mobile/image-photosnap-static-preview-one.jpg",
+                    "staticPreviewTwoMobile": "../src/assets/images/detail/mobile/image-photosnap-static-preview-two.jpg"
+                }
+            }
+        },
+        {
+            "status": "wip",
+            "title": "WIP",
+            "description": "Currently working on a MERN stack project. Stay tuned for more details on that in the coming days or weeks.",
+            "projectParameter": "wip",
+            "background": "I’m not ready to share any details on this project just yet other than that I will be utilizing the React.js front-end framework, the JavaScript/Node.js server runtime with Express for handling the routes, AJV for the server-side validation of incoming client-side data, the bcrypt package for hashing and salting passwords (though, I’m unsure at this point whether if I’ll facilitate creating new users since this project is just for showcasing my React skills, and creating new users opens me open for some nasty trolling that I’m not prepared for), and MongoDB for my database. I chose to utilize MongoDB or MySQL (the relational database that I know how to use) because the application data being stored will be anything but uniform.",
+            "techstack": ["React, Node.js, Express, MongoDB"],
+            "projectType": ["Application Concept", "Fullstack Development"],
+            "projectLinks": {
+                "websiteLink": "",
+                "publicRemoteRepo": ""
+            },
+            "images": {
+                "homepage": {
+                    "desktop": "../src/assets/images/wip/desktop/wip.jpg",
+                    "tablet": "../src/assets/images/wip/tablet/wip.jpg",
+                    "mobile": "../src/assets/images/homepage/mobile/image-audiophile-homepage-hero.jpg"
+                },
+                "portfolio": {
+                    "desktop": "../src/assets/images/wip/desktop/wip.jpg",
+                    "tablet": "../src/assets/images/wip/tablet/wip.jpg",
+                    "mobile": "../src/assets/images/wip/mobile/wip.jpg"
+                },
+                "detail": {
+                    "heroDesktop": "../src/assets/images/detail/desktop/image-wip-hero.jpg",
+                    "staticPreviewOneDesktop": "../src/assets/images/detail/desktop/image-wip-static-preview.jpg",
+                    "staticPreviewTwoDesktop": "../src/assets/images/detail/desktop/image-wip-static-preview.jpg",
+                    "heroTablet": "../src/assets/images/detail/tablet/image-wip-hero.jpg",
+                    "staticPreviewOneTablet": "../src/assets/images/detail/tablet/image-wip-static-preview.jpg",
+                    "staticPreviewTwoTablet": "../src/assets/images/detail/tablet/image-wip-static-preview.jpg",
+                    "heroMobile": "../src/assets/images/detail/mobile/image-wip-hero.jpg",
+                    "staticPreviewOneMobile": "../src/assets/images/detail/mobile/image-wip-hero.jpg",
+                    "staticPreviewTwoMobile": "../src/assets/images/detail/mobile/image-wip-hero.jpg"
+                }
+            }
+        }
+    ]
+}

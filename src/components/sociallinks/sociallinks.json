@@ -1,0 +1,17 @@
+{
+    "links": {
+        "github": "https://github.com/jerry-dev",
+        "twitter": "https://twitter.com/agentzeronine",
+        "linkedin": "https://www.linkedin.com/in/jerry-dormetus-06a446217/"
+    },
+    "icons": {
+        "github": "../src/assets/images/icons/github.svg",
+        "twitter": "../src/assets/images/icons/twitter.svg",
+        "linkedin": "../src/assets/images/icons/linkedin.svg"
+    },
+    "text": {
+        "githubAlt": "Github icon",
+        "twitterAlt": "Twitter icon",
+        "linkedinAlt": "LinkedIn icon"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "text": {
+        "miniBio": "Hi, I’m Jerry Dormetus, and I’m a passionate web developer",
+        "downArrowAlt": "Arrow pointing down at the 'About Me' section",
+        "HeroImageAlt": "Opened laptop sitting on a desk with code showing on it's screen."
+    },
+    "icons": {
+        "downArrow": "../src/assets/images/icons/down-arrows.svg"
+    },
+    "images": {
+        "desktop": "../src/assets/images/homepage/desktop/image-homepage-laptop-hero.jpg",
+        "tablet": "../src/assets/images/homepage/tablet/image-homepage-laptop-hero.jpg",
+        "mobile": "../src/assets/images/homepage/mobile/image-homepage-laptop-hero.jpg"
+    }
+}

@@ -1,0 +1,74 @@
+*, *::before, *::after { padding: 0; margin: 0; }
+
+:host {
+    align-items: center;
+    background-color: var(--color-1);
+    contain: content;
+    display: flex;
+    height: 5rem;
+    width: 100%;
+}
+
+#appFooterInnerContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--desktop-inner-container-width);
+}
+
+#genericLogo {
+    margin-right: 3rem;
+}
+
+#appFooterInnerContainer > * {
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+    letter-spacing: 0.125rem;
+}
+
+#genericLogo {
+    filter:
+        invert(100%)
+        sepia(0%)
+        saturate(2%)
+        hue-rotate(356deg)
+        brightness(108%)
+        contrast(101%);
+}
+
+social-links {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #appFooterInnerContainer {
+        width: var(--tablet-inner-container-width);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    :host {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+    #genericLogo {
+        margin: 0;
+        margin-bottom: 2.5rem;
+        margin-top: 3.5rem;
+    }
+
+    #appFooterInnerContainer {
+        flex-direction: column;
+        width: var(--mobile-inner-container-width);
+    }
+
+    social-links {
+        margin: 0;
+        margin-bottom: 3.5rem;
+        margin-top: 2.5rem;
+    }
+}

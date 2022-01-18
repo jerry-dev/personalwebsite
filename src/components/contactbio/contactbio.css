@@ -1,0 +1,70 @@
+*, *::before, *::after { padding: 0; margin: 0; }
+
+:host {
+    display: flex;
+    contain: content;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    position: relative;
+}
+
+:host::before {
+    background-color: var(--color-1-opaque-1);
+    content: '';
+    height: 0.0625rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    width: 100%;
+}
+
+#title {
+    color: var(--color-1);
+    font-family: var(--font-set-2);
+    font-size: var(--font-size-3);
+    letter-spacing: -0.0223214375rem;
+    line-height: var(--line-height-3);
+}
+
+#detailsContainer {
+    width: var(--desktop-container-1-width);
+}
+
+#paragraph {
+    color: var(--color-1);
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-2);
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    :host {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    #title {
+        margin-bottom: 1.5rem;
+    }
+
+    #detailsContainer {
+        width: 100%;
+    }
+
+    #paragraph {
+        font-size: 0.9375rem;
+        margin-bottom: 1.5rem;
+        opacity: 0.8;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    :host {
+        padding-top: 1.5rem;
+    }
+}

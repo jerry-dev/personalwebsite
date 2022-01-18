@@ -1,0 +1,27 @@
+*, *::before, *::after { margin: 0; padding: 0; }
+
+:host {
+    contain: content;
+    display: block;
+}
+
+#portfolioViewRoute {
+    display: block;
+    margin-bottom: 9.375rem;
+}
+
+call-to-action {
+    margin-bottom: 9.375rem;
+}
+
+@media screen and (max-width: 768px) {
+    call-to-action {
+        margin-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    call-to-action {
+        margin-bottom: 5rem;
+    }
+}

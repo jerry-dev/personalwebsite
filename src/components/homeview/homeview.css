@@ -1,0 +1,30 @@
+:host {
+    contain: content;
+    display: block;
+    width: 100%;
+}
+
+hero-section,
+about-me,
+call-to-action {
+    margin-bottom: 9.375rem;
+}
+
+@media screen and (max-width: 768px) {
+    hero-section,
+    about-me,
+    call-to-action {
+        margin-bottom: 6rem;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    about-me {
+        margin-bottom: 7.1875rem;
+    }
+
+    call-to-ation {
+        margin-bottom: 5rem;
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "icons": {
+        "leftArrow": "../src/assets/images/icons/arrow-left.svg",
+        "rightArrow": "../src/assets/images/icons/arrow-right.svg"
+    },
+    "text": {
+        "leftArrowAlt": "Arrow pointing left, indicating previous",
+        "rightArrowAlt": "Arrow pointing right, indicating next"
+    }
+}

@@ -1,0 +1,66 @@
+*, *::before, *::after { padding: 0; margin: 0; }
+
+:host {
+    align-items: center;
+    contain: content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ctaSentence {
+    font-family: var(--font-set-2);
+    font-size: var(--font-size-3);
+    letter-spacing: -0.0223214375rem;
+    line-height: var(--line-height-3);
+    max-width: 14ch;
+}
+
+#centerLine {
+    background-color: var(--color-1-opaque-1);
+    height: 0.125rem;
+    width: 48.108108%;
+}
+
+#ctaLinkButtonContainer {
+    align-items: center;
+    color: var(--color-1);
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    border: 0.0625rem solid black;
+    width: 10.125rem;
+}
+
+#ctaLinkButton {
+    font-size: var(--font-size-1);
+    letter-spacing: 0.125rem;
+    line-height: var(--line-height-1);
+    text-decoration: none;
+}
+
+#ctaLinkButton:visited {
+    color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+    #centerLine {
+        width: 16.40058%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    :host {
+        flex-direction: column;
+    }
+
+    #ctaSentence {
+        margin-bottom: 2.5rem;
+        max-width: 14ch;
+        text-align: center;
+    }
+
+    #centerLine {
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "jerry_dormetus_portfolio_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build-html": "cp ./src/template.html ./dist/index.html",
+    "build-stylesheet": "cp ./src/stylesheets/index.css ./dist/",
+    "build-assets": "cp -r ./src/assets/ ./dist/",
+    "build-dev": "./node_modules/.bin/rollup  --config --environment NODE_ENV:development",
+    "build-prod": "./node_modules/.bin/rollup --config --environment NODE_ENV:production",
+    "build-app": "npm run build-prod && npm run build-assets && npm run build-html && npm run build-stylesheet",
+    "browserSync": "browser-sync start --index public/index.html --browser wslview --server --files=./src/components/",
+    "browserSyncDist": "browser-sync start --index dist/index.html --browser wslview --server --files=./dist/**"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "navigo": "^8.11.1"
+  },
+  "devDependencies": {
+    "acorn-import-assertions": "^1.8.0",
+    "rollup": "^2.63.0",
+    "rollup-plugin-import-assert": "^2.1.0",
+    "rollup-plugin-modify": "^3.0.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

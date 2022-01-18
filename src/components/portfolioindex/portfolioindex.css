@@ -1,0 +1,11 @@
+*, *::before, *::after { margin: 0; padding: 0; }
+
+:host {
+    contain: content;
+    display: block;
+    width: 100%;
+}
+
+project-preview:not(:last-child) {
+    margin-bottom: 5rem;
+}

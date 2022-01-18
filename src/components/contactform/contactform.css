@@ -1,0 +1,135 @@
+*, *::before, *::after { padding: 0; margin: 0; }
+
+:host {
+    contain: content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 6.8125rem;
+    padding-top: 2.9375rem;
+    position: relative;
+}
+
+:host::before {
+    background-color: var(--color-1-opaque-1);
+    content: '';
+    height: 0.0625rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    width: 100%;
+}
+
+#title {
+    color: var(--color-1);
+    font-family: var(--font-set-2);
+    font-size: var(--font-size-3);
+    letter-spacing: -0.0223214375rem;
+    line-height: var(--line-height-3);
+}
+
+#contactFormContainer {
+    width: var(--desktop-container-1-width);
+}
+
+.inputSection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.inputLabel {
+    color: var(--color-1);
+    font-size: var(--font-size-5);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+.formInput {
+    background-color: var(--color-1-opaque-2);
+    border: none;
+    line-height: var(--line-height-2);
+    padding-left: 1rem;
+}
+
+.formInput::placeholder {
+    color: var(--color-1);
+    font-family: var(--font-set-1);
+    opacity: 0.4;
+}
+
+.inputSection #nameInput,
+.inputSection #emailInput {
+    height: 3rem;
+}
+
+.inputSection #messageInput {
+    max-height: 6rem;
+    padding-top: 0.5625rem;
+}
+
+#sendMessageButton {
+    background-color: var(--color-2);
+    color: var(--color-3);
+    cursor: pointer;
+    font-family: var(--font-set-1);
+    font-size: var(--font-size-1);
+    height: 3rem;
+    letter-spacing: 0.125rem;
+    line-height: var(--line-height-1);
+    width: 12.5rem;
+}
+
+.errorMessage[data-state='active'] {
+    background-color: #900;
+    border-radius: 0 0 0.3125rem 0.3125rem;
+    color: white;
+    display: block;
+	font-size: 80%;
+    padding: 0.3rem;
+}
+
+.errorMessage[data-state='active'] {
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-name: revealErrorMessage;
+    transform-origin: top; 
+}
+
+@keyframes revealErrorMessage {
+    0% {
+        transform: scaleY(0);
+        
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :host {
+        flex-direction: column;
+        margin-bottom: 6rem;
+        padding-top: 2rem;
+    }
+
+    #title {
+        margin-bottom: 2rem;
+    }
+
+    #contactFormContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    :host {
+        margin-bottom: 5rem;
+    }
+
+    #title {
+        margin-bottom: 1.5rem;
+    }
+}

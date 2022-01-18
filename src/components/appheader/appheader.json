@@ -1,0 +1,11 @@
+{
+    "text": {
+        "hamburgerAlt": "The idle icon for the mobile menu's launcher toggle button",
+        "closeAlt": "The active icon for the mobile menu's close toggle button"
+    },
+    "icons": {
+        "hamburger": "../src/assets/images/icons/hamburger.svg",
+        "close": "../src/assets/images/icons/close.svg"
+        
+    }
+}

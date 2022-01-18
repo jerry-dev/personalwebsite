@@ -1,0 +1,45 @@
+*, *::before, *::after {padding: 0;margin: 0}
+
+:host {
+    align-items: center;
+    contain: content;
+    display: flex;
+}
+
+:host([textcolor='colorscheme-1']) .listOfLinks li a  {
+    color: var(--color-1);
+}
+
+:host([textcolor='colorscheme-2']) .listOfLinks li a  {
+    color: var(--color-3);
+}
+
+.listOfLinks {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.listOfLinks li:not(:last-child) {
+    margin-right: 2.6875rem;
+}
+
+.listOfLinks li a {
+    font-size: var(--font-size-1);
+    letter-spacing: 0.125rem;
+    line-height: var(--line-height-1);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+    .listOfLinks {
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .listOfLinks li:not(:last-child) {
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+}

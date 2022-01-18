@@ -1,0 +1,61 @@
+*, *::before, *::after {padding: 0; margin: 0;}
+
+:host {
+    align-items: center;
+    background-color: var(--color-4);
+    bottom: 2.75rem;
+	contain: content;
+    display: flex;
+    justify-content: center;
+	text-align: center;
+	border-radius: 0.125rem;
+	position: fixed;
+	z-index: 20;
+
+    height: 4.0625rem;
+
+    left: 50%;
+    transform: translateX(-50%);
+    width: 23.4375rem;
+}
+
+#innerText {
+    color: var(--color-3);
+    font-family: var(--font-set-2);
+    font-size: var(--font-size-7);
+}
+
+:host([state='stand-by']) {
+    visibility: hidden;
+}
+
+:host([state='shown']) {
+    visibility: visible;
+	animation-name: popIn, popOut;
+	animation-duration: 0.3s, 0.3s;
+    animation-delay: 0s, 3s;
+	animation-iteration-count: 1, 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popIn {
+	0%, 25% {
+		transform: translate3d(-50%, 4.75rem, 0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate3d(-50%, 0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes popOut {
+	0% {
+		transform: translate3d(-50%, 0, 0);
+		opacity: 1;
+	}
+	100% {
+		transform: translate3d(-50%, 7rem, 0);
+		opacity: 0;
+	}
+}

@@ -1,0 +1,100 @@
+*, *::before, *::after { padding: 0; margin: 0; }
+
+:host {
+    contain: content;
+    display: grid;
+    grid-column-gap: var(--gap-width-1);
+    grid-template-columns: repeat(12, var(--columns-width-1));
+    width: 100%;
+}
+
+#imageBannerContainer {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    margin-bottom: 7.1875rem;
+}
+
+#imageBannerContainer {
+    animation-name: revealSelf;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+}
+
+@keyframes revealSelf {
+    0% {
+        opacity: 0;
+        transform: scale3d(0.5, 1, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+
+#imageOutput {
+    height: 31.25rem;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+project-summary {
+    grid-column: 1 /span 4;
+    grid-row: 2 / span 1;
+}
+
+#backgroundAndPreviewContainer {
+    grid-column: 6 / -1;
+    grid-row: 2 / span 2;
+    margin-bottom: 4rem;
+}
+
+project-background {
+    margin-bottom: 2.5rem;
+}
+
+project-navigator {
+    grid-column: 1 / -1;
+    height: 8.125rem;
+}
+
+@media screen and (max-width: 768px) {
+    #imageBannerContainer {
+        margin-bottom: 2.5rem;
+    }
+
+    #imageOutput {
+        height: 19.375rem;
+    }
+
+    project-summary {
+        grid-column: 1 / -1;
+        margin-bottom: 2.5rem;
+    }
+
+    project-navigator {
+        height: 8.25rem;
+    }
+
+    #backgroundAndPreviewContainer {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #imageOutput {
+        height: 8.75rem;
+    }
+
+    #backgroundAndPreviewContainer {
+        margin-bottom: 4rem;
+    }
+
+    project-navigator {
+        height: 9.25rem;
+    }
+}

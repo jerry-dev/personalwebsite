@@ -1,0 +1,29 @@
+*, *::before, *::after { padding: 0; margin: 0; }
+
+:host  {
+    contain: content;
+    display: block;
+}
+
+#heading {
+    color: var(--color-1);
+    font-family: var(--font-set-2);
+    font-size: var(--font-size-7);
+    font-weight: normal;
+    letter-spacing: -0.017857125rem;
+    margin-bottom: 1.75rem;
+}
+
+#picture1 {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+#picture2 {
+    display: flex;
+}
+
+.previewImage {
+    object-fit: cover;
+    width: 100%;
+}

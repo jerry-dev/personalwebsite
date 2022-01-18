@@ -1,0 +1,19 @@
+{
+    
+    "text": {
+        "title": "About Me",
+        "bio": "I’m a NYC based web developer whose focus is on the front-end, but with back-end capabilities via Node.js, Express, with either MongoDB, or MySQL. I am proficient at building complex yet responsive stateful user interfaces per semantic HTML, modern CSS and JavaScript wrapped within the browser’s native component system for a dependency free front-end. I’m also capable of performing the same tasks using the React.js library and other React associated third party tools such as Redux, React Router, and Webpack. In my free time, I’m either studying UI/UX design, cooking, watching ‘Succession’, or developing my illustration skills.",
+        "portraitAlt": "A photo of Jerry Dormetus"
+    },
+    "images": {
+        "desktop": {
+            "portrait": "../src/assets/images/homepage/desktop/profile.jpg"
+        },
+        "tablet": {
+            "portrait": "../src/assets/images/homepage/tablet/profile.jpg"
+        },
+        "mobile": {
+            "portrait": "../src/assets/images/homepage/mobile/profile.jpg"
+        }
+    }
+}

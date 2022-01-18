@@ -1,0 +1,124 @@
+:host {
+    contain: content;
+    display: block;
+    font-family: var(--font-set-2);
+    height: 37.5rem;
+}
+
+figure {
+    align-items: flex-end;
+    display: flex;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+#heroSectionPicture img {
+    object-fit: cover;
+    object-position: center;
+}
+
+#bioCaption {
+    background-color: var(--color-3);
+    max-width: 27.8125rem;
+    position: absolute;
+}
+
+.bioBoxInnerContainer {
+    font-size: var(--font-size-4);
+    font-weight: bold;
+    line-height: var(--line-height-4);
+}
+
+#bioBoxInnerContainer {
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-4);
+    margin-bottom: 3.3125rem;
+    margin-top: 3.5rem;
+    width: 88.64044%;
+}
+
+.aboutMeBox {
+    align-items: center;
+    color:  var(--color-3);
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: row;
+    font-size: var(--font-size-1);
+    height: 3rem;
+    max-width: 12.5rem;
+    line-height: var(--line-height-1);
+    text-align: center;
+}
+
+.downArrowButton {
+    background: none;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+}
+
+.aboutMeBoxText {
+    font-family: var(--font-set-1);
+    letter-spacing: 0.125rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #bioCaption {
+        max-width: 32.125rem;
+    }
+
+    #bioBoxInnerContainer {
+        font-size: var(--font-size-3);
+        line-height: var(--line-height-3);
+        margin-bottom: 3rem;
+        width: 89.5833%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    :host {
+        height: auto;
+        min-height: 33.9375rem;
+    }
+
+    figure {
+        min-height: 16.9375rem;
+        flex-direction: column;
+    }
+
+    #heroSectionPicture {
+        width: 100%;
+    }
+
+    #heroSectionPicture img {
+        height: 16.9375rem;
+        min-width: 100%;
+        width: 100%;
+    }
+
+    #bioBoxInnerContainer {
+        margin: 0;
+        margin-bottom: 2rem;
+        min-height: 9.875rem;
+        width: 100%;
+    }
+
+    #miniBioText {
+        margin: 0;
+    }
+
+    #bioCaption {
+        display: block;
+        font-size: var(--font-size-3);
+        height: auto;
+        letter-spacing: -0.357143px;
+        line-height: var(--line-height-3);
+        margin-top: 1.5rem;
+        position: auto;
+        position: relative;
+    }
+}

@@ -1,0 +1,35 @@
+:host {
+    contain: content;
+    display: block;
+}
+
+:host([state='notReady']) {
+    opacity: 0;
+}
+
+:host([state='isReady']) {
+    opacity: 1;
+    transition: .45s opacity;
+}
+
+#appInnerContainer-layer-1 {
+    width: 100%;
+}
+
+#appInnerContainer-layer-2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--desktop-inner-container-width);
+}
+
+@media screen and (max-width: 768px) {
+    #appInnerContainer-layer-2 {
+        width: var(--tablet-inner-container-width);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #appInnerContainer-layer-2 {
+        width: var(--mobile-inner-container-width);
+    }
+}
