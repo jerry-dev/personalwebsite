@@ -59,7 +59,7 @@ export default class ProjectPreview extends HTMLElement {
 
         descriptionBlock.setAttribute('id', 'descriptionBlock');
 
-        title.append(this.getAttribute('title'));
+        title.append(this.getAttribute('title').replace("_", " "));
         title.setAttribute('id', 'title');
 
         descriptionParagraph.innerHTML = this.getAttribute('description');
