@@ -51,7 +51,7 @@ export default class ProjectSummary extends HTMLElement {
         techStack.id = 'techStack';
         websiteLink.id = 'linkToProject';
 
-        projectTitle.textContent = this.getAttribute('projectTitle');
+        projectTitle.textContent = this.getAttribute('projectTitle').replace("_", " ");
 
         projectDescriptionGeneral.innerHTML = this.getAttribute('projectDescription');
         projectDescriptionTablet.innerHTML = this.getAttribute('projectDescription');
