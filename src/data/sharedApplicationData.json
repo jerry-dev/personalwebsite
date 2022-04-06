@@ -80,9 +80,9 @@
         },
         {
             "status": "deployed",
-            "title": "Akademi (WIP)",
+            "title": "Akademi_(WIP)",
             "description": "This project is a mock school admin dashboard. The figma design file was purchased from a design marketplace called <a href='https://themeforest.net/item/akademi-elegant-school-admin-dashboard-figma/32294499' target='_blank' rel='noopener noreferrer'>envato market aka Theme Forest</a>. The dashboard facilitates an admin’s ability to add new students, teachers, and events, while also communicating with the students.",
-            "projectParameter": "akademi",
+            "projectParameter": "akademi_(wip)",
             "background": "As stated in the description, the source of this design comes from a design marketplace. Unfortunately, the design was not responsive, nor did it come with any image assets nor data. Making up for these missing elements was a pretty significant challenge for me, especially finding image assets, but I prevailed. I research many different UI design patterns to help me incorporate a responsive design. The data modeling aspect wasn’t very difficult, but I did make mistakes that needed to be rectified later on, even after the data was hosted on MongoDB Atlas.<br/><br/>While working on this application, I came across some issues with Chart.js 2 that required me to upgrade to Chart.js 3, which is a breaking change with Chart.js 2 . I had to research and update my notes on Chart.js. I also decided to utilize React Hooks as well as using the hookifed approach to redux-react. The images for the food are served via a CDN (Imagekit.io), while the student profiles come from a public API. The <a href='https://github.com/jerry-dev/akademi_server' target=’_blank’ rel='noopener noreferrer'>Node server</a> is hosted over on Heroku, while the frontend is on Netlify.",
             "techstack": ["React, Node.js, Express, MongoDB, Redux"],
             "projectType": ["Application Concept", "Fullstack Development"],
