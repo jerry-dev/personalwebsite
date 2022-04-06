@@ -63,7 +63,6 @@ export default class ProjectPreview extends HTMLElement {
         title.setAttribute('id', 'title');
 
         descriptionParagraph.innerHTML = this.getAttribute('description');
-        console.log(this.getAttribute('description'))
         descriptionParagraph.setAttribute('id', 'descriptionParagraph');
 
         descriptionContainer.setAttribute('id', 'descriptionContainer');
