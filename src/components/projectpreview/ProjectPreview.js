@@ -62,7 +62,8 @@ export default class ProjectPreview extends HTMLElement {
         title.append(this.getAttribute('title'));
         title.setAttribute('id', 'title');
 
-        descriptionParagraph.append(this.getAttribute('description'));
+        descriptionParagraph.innerHTML = this.getAttribute('description');
+        console.log(this.getAttribute('description'))
         descriptionParagraph.setAttribute('id', 'descriptionParagraph');
 
         descriptionContainer.setAttribute('id', 'descriptionContainer');

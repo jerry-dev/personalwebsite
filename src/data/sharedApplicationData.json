@@ -79,38 +79,38 @@
             }
         },
         {
-            "status": "wip",
-            "title": "WIP",
-            "description": "Currently working on a MERN stack project. Stay tuned for more details on that in the coming days or weeks.",
-            "projectParameter": "wip",
-            "background": "I’m not ready to share any details on this project just yet other than that I will be utilizing the React.js front-end framework, the JavaScript/Node.js server runtime with Express for handling the routes, AJV for the server-side validation of incoming client-side data, the bcrypt package for hashing and salting passwords (though, I’m unsure at this point whether if I’ll facilitate creating new users since this project is just for showcasing my React skills, and creating new users opens me open for some nasty trolling that I’m not prepared for), and MongoDB for my database. I chose to utilize MongoDB or MySQL (the relational database that I know how to use) because the application data being stored will be anything but uniform.",
-            "techstack": ["React, Node.js, Express, MongoDB"],
+            "status": "deployed",
+            "title": "Akademi (WIP)",
+            "description": "This project is a mock school admin dashboard. The figma design file was purchased from a design marketplace called <a href=”https://themeforest.net/item/akademi-elegant-school-admin-dashboard-figma/32294499” target='_blank'>envato market aka Theme Forest</a>. The dashboard facilitates an admin’s ability to add new students, teachers, and events, while also communicating with the students.",
+            "projectParameter": "akademi",
+            "background": "As stated in the description, the source of this design comes from a design marketplace. Unfortunately, the design was not responsive, nor did it come with any image assets nor data. Making up for these missing elements was a pretty significant challenge for me, especially finding image assets, but I prevailed. I research many different UI design patterns to help me incorporate a responsive design. The data modeling aspect wasn’t very difficult, but I did make mistakes that needed to be rectified later on, even after the data was hosted on MongoDB Atlas.<br/><br/>While working on this application, I came across some issues with Chart.js 2 that required me to upgrade to Chart.js 3, which is a breaking change with Chart.js 2 . I had to research and update my notes on Chart.js. I also decided to utilize React Hooks as well as using the hookifed approach to redux-react. The images for the food are served via a CDN (Imagekit.io), while the student profiles come from a public API. The <a href=”https://github.com/jerry-dev/akademi_server” target=’_blank’>Node server</a> is hosted over on Heroku, while the frontend is on Netlify.",
+            "techstack": ["React, Node.js, Express, MongoDB, Redux"],
             "projectType": ["Application Concept", "Fullstack Development"],
             "projectLinks": {
-                "websiteLink": "",
-                "publicRemoteRepo": ""
+                "websiteLink": "https://akademi-by-jerry-dormetus.netlify.app/",
+                "publicRemoteRepo": "https://github.com/jerry-dev/akademi"
             },
             "images": {
                 "homepage": {
-                    "desktop": "../src/assets/images/wip/desktop/wip.jpg",
-                    "tablet": "../src/assets/images/wip/tablet/wip.jpg",
-                    "mobile": "../src/assets/images/homepage/mobile/image-audiophile-homepage-hero.jpg"
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
                 },
                 "portfolio": {
-                    "desktop": "../src/assets/images/wip/desktop/wip.jpg",
-                    "tablet": "../src/assets/images/wip/tablet/wip.jpg",
-                    "mobile": "../src/assets/images/wip/mobile/wip.jpg"
+                    "desktop": "../src/assets/images/portfolio/desktop/image-portfolio-akademi.jpg",
+                    "tablet": "../src/assets/images/portfolio/tablet/image-portfolio-akademi.jpg",
+                    "mobile": "../src/assets/images/portfolio/mobile/image-portfolio-akademi.jpg"
                 },
                 "detail": {
-                    "heroDesktop": "../src/assets/images/detail/desktop/image-wip-hero.jpg",
-                    "staticPreviewOneDesktop": "../src/assets/images/detail/desktop/image-wip-static-preview.jpg",
-                    "staticPreviewTwoDesktop": "../src/assets/images/detail/desktop/image-wip-static-preview.jpg",
-                    "heroTablet": "../src/assets/images/detail/tablet/image-wip-hero.jpg",
-                    "staticPreviewOneTablet": "../src/assets/images/detail/tablet/image-wip-static-preview.jpg",
-                    "staticPreviewTwoTablet": "../src/assets/images/detail/tablet/image-wip-static-preview.jpg",
-                    "heroMobile": "../src/assets/images/detail/mobile/image-wip-hero.jpg",
-                    "staticPreviewOneMobile": "../src/assets/images/detail/mobile/image-wip-hero.jpg",
-                    "staticPreviewTwoMobile": "../src/assets/images/detail/mobile/image-wip-hero.jpg"
+                    "heroDesktop": "../src/assets/images/detail/desktop/image-akademi-hero.jpg",
+                    "staticPreviewOneDesktop": "../src/assets/images/detail/desktop/image-akademi-static-preview-one.jpg",
+                    "staticPreviewTwoDesktop": "../src/assets/images/detail/desktop/image-akademi-static-preview-two.jpg",
+                    "heroTablet": "../src/assets/images/detail/tablet/image-akademi-hero.jpg",
+                    "staticPreviewOneTablet": "../src/assets/images/detail/tablet/image-akademi-static-preview-one.jpg",
+                    "staticPreviewTwoTablet": "../src/assets/images/detail/tablet/image-akademi-static-preview-two.jpg",
+                    "heroMobile": "../src/assets/images/detail/mobile/image-akademi-hero.jpg",
+                    "staticPreviewOneMobile": "../src/assets/images/detail/mobile/image-akademi-static-preview-one.jpg",
+                    "staticPreviewTwoMobile": "../src/assets/images/detail/mobile/image-akademi-static-preview-two.jpg"
                 }
             }
         }

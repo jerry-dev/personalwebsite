@@ -28,7 +28,8 @@ export default class ProjectBackground extends HTMLElement {
         heading.setAttribute('id', 'heading');
         paragraph.setAttribute('id', 'paragraph');
 
-        paragraph.append(this.getAttribute('paragraph'));
+        // paragraph.append(this.getAttribute('paragraph'));
+        paragraph.innerHTML = this.getAttribute('paragraph');
 
         this.shadowRoot.appendChild(heading);
         this.shadowRoot.appendChild(paragraph);

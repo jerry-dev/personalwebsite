@@ -53,8 +53,8 @@ export default class ProjectSummary extends HTMLElement {
 
         projectTitle.textContent = this.getAttribute('projectTitle');
 
-        projectDescriptionGeneral.textContent = this.getAttribute('projectDescription');
-        projectDescriptionTablet.textContent = this.getAttribute('projectDescription');
+        projectDescriptionGeneral.innerHTML = this.getAttribute('projectDescription');
+        projectDescriptionTablet.innerHTML = this.getAttribute('projectDescription');
         projectType.textContent = this.getAttribute('projectType');
         techStack.textContent = this.getAttribute('techStack');
 
