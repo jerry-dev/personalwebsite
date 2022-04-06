@@ -48,8 +48,8 @@ export default class ProjectNavigator extends HTMLElement {
         previousProjectTitle.setAttribute('class', 'projectTitle');
         nextProjectLinkTitle.setAttribute('class', 'projectTitle');
 
-        previousProjectTitle.append(this.caseReformatter(this.getAttribute('previousProjectTitle')));
-        nextProjectLinkTitle.append(this.caseReformatter(this.getAttribute('nextProjectTitle')));
+        previousProjectTitle.append(this.caseReformatter(this.getAttribute('previousProjectTitle')).replace("_(wip)", ""));
+        nextProjectLinkTitle.append(this.caseReformatter(this.getAttribute('nextProjectTitle')).replace("_(wip)", ""));
 
         const previousProjectSubtitle = document.createElement('p');
         const nextProjectLinkSubtitle = document.createElement('p');
