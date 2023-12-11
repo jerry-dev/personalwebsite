@@ -2,7 +2,7 @@
     
     "text": {
         "title": "About Me",
-        "bio": "I’m a NYC based web developer whose focus is on the front-end, but with back-end capabilities via Node.js, Express, with either MongoDB, or MySQL. I am proficient at building complex yet responsive stateful user interfaces per semantic HTML, modern CSS and JavaScript wrapped within the browser’s native component system for a dependency free front-end. I’m also capable of performing the same tasks using the React.js library and other React associated third party tools such as Redux, React Router, and Webpack. In my free time, I’m either studying UI/UX design, cooking, watching ‘Succession’, or developing my illustration skills.",
+        "bio": "I am a NYC based software developer whose focus is on the fullstack web and Flutter mobile development with a touch of UI design. I am proficient at building responsive and dynamic user interfaces per semantic HTML, modern CSS, JavaScript, Web Components, Node.js for the backend and Dart/Flutter for mobile using the least amount of third party dependencies as possible. I’m also capable of building frontend web applications using the React.js library and other React associated third party tools such as React Redux, React Router, and Webpack. In my free time, I’m either further developing my current skill set, or expressing my creative half via photography and/or videography.",
         "portraitAlt": "A photo of Jerry Dormetus"
     },
     "images": {
